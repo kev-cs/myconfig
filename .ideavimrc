@@ -1,0 +1,11 @@
+set surround
+set relativenumber
+set ignorecase
+set incsearch
+set hlsearch
+set showmode
+set smartcase
+set wrapscan
+
+set ruler
+set visualbell
