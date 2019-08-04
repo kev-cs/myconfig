@@ -2,9 +2,11 @@ alias v=vim
 alias l="ls -lah"
 alias grep='grep --color=auto'
 alias -s {zip,ZIP,jar,JAR,war,WAR}="unzip -l"
+alias mc='my-config'
 
 ialias l='exa -lah'
 ialias grep='grep --color=auto'
+ialias my-config='/usr/bin/git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
 
 # starts one or multiple args as programs in background
 background() {

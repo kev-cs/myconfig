@@ -1,4 +1,4 @@
-SHELL_CONFIG_DIR=./shell-config
+SHELL_CONFIG_DIR=~/shell-config
 
 source $SHELL_CONFIG_DIR/oh-my-zsh-config
 source ~/.bashrc
