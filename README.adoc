@@ -1,0 +1,19 @@
+= My config giles
+
+Includes my personal dotfiles, shell aliases and configs, and some utilities scripts +
+Uses dotbot to effortlessly recreate symlinks.
+
+== Resources, guides and tools used
+
+[%hardbreaks]
+https://wiki.archlinux.org/index.php?title=Pacman/Tips_and_tricks&redirect=no#Listing_packages[Listing packages (with pacman)]
+https://wiki.archlinux.org/index.php/Pacman/Tips_and_tricks#Install_packages_from_a_list[Installing packages from a list (with pacman)]
+https://github.com/robbyrussell/oh-my-zsh[Oh-my-zsh]
+https://dotfiles.github.io/[Github does dotfiles]
+https://blog.sebastian-daschner.com/entries/zsh-aliases[Increasing Shell Productivity With Zsh Aliases - Sebastian Daschner]
+
+== TODO
+- setup automated backups of packages and configs
+- automate IntelliJ installation
+- add Intellij configuration
+- use https://github.com/anishathalye/dotbot/[Dotbot] when https://github.com/anishathalye/dotbot/issues/183[this enhancement] is implemented (I'm iusing my own script at the moment, for simplicity's sake)

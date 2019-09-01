@@ -36,4 +36,5 @@ expand-alias-space() {
 zle -N expand-alias-space
 
 bindkey " " expand-alias-space
+# normal space during searches
 bindkey -M isearch " " magic-space
