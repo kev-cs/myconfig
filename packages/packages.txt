@@ -11,14 +11,16 @@ nmap
 nodejs
 npm
 openssh
+ranger
+rofi
 rsync
-terminator
 tree
 veracrypt
 vim
 visualvm
 wget
 xclip
+xorg-xev
 yarn
 yay
 zsh
