@@ -18,8 +18,8 @@ default_floating_border pixel 55
 #hide_edge_borders none
 
 # custom bindings
-bindsym $mod+z exec ~/.i3/i3zen.sh
 bindsym $mod+Tab exec --no-startup-id "rofi -show window"
+bindsym $mod+grave exec --no-startup-id urxvt -title "i3 Shortcuts" -e sh -c "egrep ^bind ~/.config/i3/config | cut -d ' ' -f 2- | sed 's/ /\t/' | column -ts $'\t' | pr -2 -w 145 -t | less"
 
 # change borders
 bindsym $mod+u border none
@@ -194,6 +194,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 # assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
+for_window [title="i3 Shortcuts"] floating enable, move position center, resize grow left 318, resize grow right 318, resize grow down 115, resize grow up 115
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
@@ -286,13 +287,14 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
-# exec --no-startup-id blueman-applet
+exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
+exec_always ~/.config/i3/display-setup.sh
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
