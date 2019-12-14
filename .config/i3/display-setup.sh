@@ -72,7 +72,6 @@ if [[ "$IS_DISPLAY_MODIFIED" == "true" ]]; then
     send_notif "Display has been modified, seting up wallpaper"
     sudo -u kev nitrogen --restore
     killall conky
-    sudo -u kev conky -c /usr/share/conky/conky1.10_shortcuts_maia
     sudo -u kev conky -c /usr/share/conky/conky_maia
 else
     send_notif "No modification applied to display"

@@ -8,11 +8,11 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # set mouse focus, default is yes
-#focus_follows_mouse no
+focus_follows_mouse no
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 1
-default_floating_border pixel 55
+default_floating_border pixel 1
 
 # Hide borders
 #hide_edge_borders none
@@ -20,6 +20,7 @@ default_floating_border pixel 55
 # custom bindings
 bindsym $mod+Tab exec --no-startup-id "rofi -show window"
 bindsym $mod+grave exec --no-startup-id urxvt -title "i3 Shortcuts" -e sh -c "egrep ^bind ~/.config/i3/config | cut -d ' ' -f 2- | sed 's/ /\t/' | column -ts $'\t' | pr -2 -w 145 -t | less"
+bindsym $mod+Mod1+f focus parent; fullscreen; focus child
 
 # change borders
 bindsym $mod+u border none
@@ -121,7 +122,7 @@ bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space "floating toggle"
-bindsym $mod+Ctrl+space "floating enable; resize set 50ppt 98ppt; move position center"
+bindsym $mod+Ctrl+space "floating enable; resize set 60ppt 98ppt; move position center"
 bindsym $mod+Mod1+space "floating disable"
 
 # change focus between tiling / floating windows
@@ -277,7 +278,7 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+9 exec --no-startup-id physlock -d
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -291,10 +292,10 @@ exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 10 -locker "physlock -d"
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-exec_always ~/.config/i3/display-setup.sh
+exec_always ~/.config/i3/display-setup.sh force
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:

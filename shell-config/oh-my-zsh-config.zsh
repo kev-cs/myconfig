@@ -10,6 +10,7 @@ docker-compose
 zsh-syntax-highlighting
 zsh-autosuggestions
 wd
+zsh-nvm
 )
 
 source $ZSH/oh-my-zsh.sh
