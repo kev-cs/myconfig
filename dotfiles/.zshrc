@@ -15,8 +15,6 @@ source $SHELL_CONFIG_DIR/aliases.sh
 alias -s {zip,ZIP,jar,JAR,war,WAR}="unzip -l"
 alias -s {txt,TXT}="less"
 
-export PATH=${PATH}:~/Data/bin
-
 if [[ -f /usr/share/nvm/init-nvm.sh ]]; then
   source /usr/share/nvm/init-nvm.sh
 fi
