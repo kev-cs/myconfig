@@ -4,9 +4,11 @@
 
 module.exports = {
   config: {
-    opacity: 0.55,
+    opacity: {
+      focus: 0.95
+    },
     hyperTransparentDynamic: {
-      alpha: 0.5 // default 50%
+      alpha: 1 // default 50%
     },
     hyperline: {                                                                 
       plugins: [
@@ -40,7 +42,7 @@ module.exports = {
         fontSize: '10px'
       },
       focusOnMouseHover: false,
-      inactivePaneOpacity: 0.6 // Set to 1 to disable inactive panes dimming
+      inactivePaneOpacity: 0.4 // Set to 1 to disable inactive panes dimming
     },
     scrollback: 2147483648,
     
@@ -52,7 +54,7 @@ module.exports = {
     fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'Menlo, "MesloLGS NF", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -84,7 +86,7 @@ module.exports = {
     // terminal background color
     // opacity is only supported on macOS
     //backgroundColor: '#000',
-    backgroundColor: 'rgba(50, 50, 50, 0.5)',
+    backgroundColor: 'rgba(16, 16, 16)',
 
     // terminal selection color
     selectionColor: 'rgba(248,28,229,0.3)',
@@ -146,13 +148,13 @@ module.exports = {
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
     shell: '',
     // my windows shell
-    // shell: 'wsl.exe
+    //shell: 'wsl.exe',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
     shellArgs: ['--login'],
     // windows shell args
-    // shellArgs: ['~'],
+    //shellArgs: ['~'],
 
     // for environment variables
     env: {},
@@ -192,7 +194,7 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-//     'hyper-opacity', 
+    'hyper-opacity', 
 //     'hyper-transparent'
 //     'hyper-transparent-bg',
 //     'hyper-transparent-dynamic',
