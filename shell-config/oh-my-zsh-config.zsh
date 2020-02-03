@@ -11,6 +11,7 @@ zsh-syntax-highlighting
 zsh-autosuggestions
 wd
 nvm
+z
 )
 
 source $ZSH/oh-my-zsh.sh

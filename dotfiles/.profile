@@ -1,11 +1,15 @@
-if [[ -f ~/.myprofile ]]; then
-  source ~/.myprofile;
-else
-  echo "~/.myprofile is not defined (for locally dependent settings)"
-fi
+function sourceFileIfExists() {
+  if [[ -f $1 ]]; then
+    source $1
+  else
+    echo "$1 is not defined"
+  fi
+}
+
+sourceFileIfExists ~/.myprofile;
 
 if [[ -v MYBIN ]]; then
-  export PATH=${PATH}:~/Data/bin
+  export PATH=${PATH}:${MYBIN}
 else
   echo "\$MYBIN is not defined"
 fi
