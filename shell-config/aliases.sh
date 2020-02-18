@@ -14,6 +14,7 @@ fi
 if type "ialias" > /dev/null; then
   ialias l > /dev/null
   ialias grep > /dev/null
+  ialias z > /dev/null
 fi
 
 # starts one or multiple args as programs in background

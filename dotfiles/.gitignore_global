@@ -2,3 +2,4 @@
 ignored-dir
 .idea
 *.iml
+target/
