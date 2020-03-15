@@ -1,4 +1,4 @@
-= My config giles
+= My config files
 
 My personal dotfiles, shell aliases and configs, and some utilities
 

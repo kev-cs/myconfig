@@ -1,12 +1,4 @@
-function sourceFileIfExists() {
-  if [[ -f $1 ]]; then
-    source $1
-  else
-    echo "$1 is not defined"
-  fi
-}
-
-sourceFileIfExists ~/.myprofile;
+source ~/.myprofile;
 
 if [[ -v MYBIN ]]; then
   export PATH=${PATH}:${MYBIN}
