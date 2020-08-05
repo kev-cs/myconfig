@@ -31,9 +31,7 @@ gdeleteremote() {
 	branch_name=${branch_name##refs/heads/}
 	git push -d origin $branch_name
 }
-gcmap_amend(){
-	gdeleteremote && git add --all && git commit --amend --no-edit "$1" && git push;
-}
+
 alias 'gcmap!'="gcmap_amend"
 
 alias gstash="gaa && git stash"

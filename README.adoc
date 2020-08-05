@@ -1,6 +1,6 @@
 = My config files
 
-My personal dotfiles, shell aliases and configs, and some utilities
+My personal dotfiles, shell aliases, configs, and some utilities
 
 == Some useful resources, guides and tools
 
@@ -11,5 +11,3 @@ https://github.com/robbyrussell/oh-my-zsh[Oh-my-zsh]
 https://dotfiles.github.io/[Github does dotfiles]
 https://blog.sebastian-daschner.com/entries/zsh-aliases[Increasing Shell Productivity With Zsh Aliases - Sebastian Daschner]
 
-== TODO
-- use https://github.com/anishathalye/dotbot/[Dotbot] when https://github.com/anishathalye/dotbot/issues/183[this enhancement] is implemented (I'm iusing my own script at the moment, for simplicity's sake)

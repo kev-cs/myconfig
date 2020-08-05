@@ -10,7 +10,6 @@ docker-compose
 zsh-syntax-highlighting
 zsh-autosuggestions
 wd
-nvm
 z
 )
 

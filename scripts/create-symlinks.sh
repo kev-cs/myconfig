@@ -4,7 +4,7 @@ SCRIPTNAME=$(basename "$0")
 echo "$SCRIPTNAME"
 
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
-DOT_FILES=$(find "$BASEDIR/dotfiles/" -name "\.*" -type f)
+DOT_FILES=$(find "$BASEDIR/home-dotfiles/" -name "\.*" -type f)
 CONFIG_FILES=$(find "$BASEDIR/.config/" -maxdepth 1)
 
 echo "> Creating symlinks for dotfiles"
