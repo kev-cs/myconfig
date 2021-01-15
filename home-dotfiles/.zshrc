@@ -5,11 +5,12 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-SHELL_CONFIG_DIR=~/shell-config
+SHELL_CONFIG_DIR=~/myconfig/shell-config
 
 source $SHELL_CONFIG_DIR/oh-my-zsh-config.zsh
 source $SHELL_CONFIG_DIR/alias-expansion-config.zsh
 source $SHELL_CONFIG_DIR/git-aliases.sh
+source $SHELL_CONFIG_DIR/git-functions.sh
 source $SHELL_CONFIG_DIR/aliases.sh
 
 alias -s {zip,ZIP,jar,JAR,war,WAR}="unzip -l"
