@@ -23,6 +23,7 @@ for file in $CONFIG_FILES; do
   elif [ -d ~/.config/"$BASENAME" ]; then
     mkdir ~/.config/"$BASENAME"_bak
     mv ~/.config/"$BASENAME"/* ~/.config/"$BASENAME"_bak
+    rmdir ~/.config/"$BASENAME"
   fi
 
   ln -sfi "$file" ~/.config/"$BASENAME"
