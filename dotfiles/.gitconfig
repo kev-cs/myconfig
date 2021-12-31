@@ -1,5 +1,5 @@
 [core]
-	excludesfile=~/.gitignore
+	excludesfile=~/.global-gitignore
 [pull]
 	rebase = true
 [user]
